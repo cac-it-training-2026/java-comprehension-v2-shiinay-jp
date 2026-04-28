@@ -1,24 +1,16 @@
-package q01_basic.question04;
+package q01_basic.question06;
 
-class Member {
+public class Member extends AbstMember {
 
+	//フィールド
 	private int id;
 	private String password;
-	private String name;
 	private int age;
 	private int rank;
 
 	/**
-	 *
-	 */
-	public Member() {
-
-	}
-
-	/**
 	 * @param id
 	 * @param password
-	 * @param name
 	 * @param age
 	 * @param rank
 	 */
@@ -59,20 +51,6 @@ class Member {
 	}
 
 	/**
-	 * @return name
-	 */
-	public String getName() {
-		return name;
-	}
-
-	/**
-	 * @param name セットする name
-	 */
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	/**
 	 * @return age
 	 */
 	public int getAge() {
@@ -100,9 +78,17 @@ class Member {
 		this.rank = rank;
 	}
 
+	//メソッド
+	@Override
+	public void buyItem() {
+
+		System.out.println(name + "purchased the item at 50% off");
+
+	}
+
+	@Override
 	public void showMember() {
 
-		System.out.println("---SHOW DATA---");//mainメソッド内で記述する（任意）
 		System.out.println("***MEMBER DATA***");//classメソッド内に記述（必須）
 		System.out.println("id:" + id);
 		System.out.println("password:" + password);
