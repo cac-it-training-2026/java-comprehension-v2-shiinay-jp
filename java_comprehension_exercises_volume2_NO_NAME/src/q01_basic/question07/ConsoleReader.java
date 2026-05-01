@@ -1,27 +1,10 @@
-package q01_basic.question06;
+package q01_basic.question07;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-/**
- * 標準入力を制御するクラス
- */
-class ConsoleReader {
-
-	/**
-	 * 文字列の標準入力。
-	 * 
-	 * @return 入力文字列
-	 * @throws IOException
-	 */
-	public String inputString() throws IOException {
-		//以下
-		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		String res = reader.readLine();
-
-		return res;
-	}
+public class ConsoleReader {
 
 	/**
 	 * 整数の標準入力。
